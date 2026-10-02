@@ -1,0 +1,58 @@
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+android {
+    namespace 'com.example.mystaterecyclerview'
+    compileSdk 36
+
+    defaultConfig {
+        applicationId "com.example.mystaterecyclerview"
+        minSdk 24
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+
+    implementation libs.appcompat
+    implementation libs.material
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+
+    implementation 'io.github.scwang90:refresh-layout-kernel:2.1.0'
+    implementation 'io.github.scwang90:refresh-header-classics:2.1.0'
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.annotation:annotation:1.8.0'
+    implementation "com.facebook.shimmer:shimmer:0.5.0"
+
+    // Glide用于加载图片
+    implementation 'com.github.bumptech.glide:glide:4.16.0' // Glide加载图片
+    implementation 'jp.wasabeef:glide-transformations:4.3.0'// Glide圆角
+    implementation 'com.github.andy-yingwei:GlideHelper:v1.0.1'// GlideHelper帮助类
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.16.0' // Glide 的注解处理器
+    implementation "com.github.bumptech.glide:okhttp3-integration:4.16.0" // Glide+OKHttp3
+
+    // sparkbutton用于创建具有类似Twitter心形动画效果的按钮
+    implementation 'com.github.varunest:sparkbutton:1.0.6'
+
+    // 依赖模块
+    implementation project(':StateRecyclerView')
+}

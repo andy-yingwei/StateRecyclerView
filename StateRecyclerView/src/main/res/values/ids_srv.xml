@@ -1,0 +1,9 @@
+<resources>
+    <item name="srv_refresh" type="id" />
+    <item name="srv_rv" type="id" />
+    <item name="srv_test" type="id" />
+    <item name="tv_empty_title" type="id" />
+    <item name="tv_error_title" type="id" />
+    <item name="btn_empty_refresh" type="id" />
+    <item name="btn_error_retry" type="id" />
+</resources>

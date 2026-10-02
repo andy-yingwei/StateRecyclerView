@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="72dp"
+    android:height="72dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24"
+    android:tint="?attr/colorOnSurfaceVariant">
+
+    <!-- 空盒子图标 -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="
+        M3 7l9-4 9 4v10l-9 4-9-4V7zm2 1.5v7.2l7 3.1 7-3.1v-7.2l-7-3.1-7 3.1z
+        M8 11h8v2H8v-2z" />
+</vector>

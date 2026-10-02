@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StateRecyclerView">
+        <attr name="srv_spanCount" format="integer"/>
+        <attr name="srv_showLoadingOnInit" format="boolean"/>
+        <attr name="srv_emptyText" format="string"/>
+        <attr name="srv_errorText" format="string"/>
+    </declare-styleable>
+</resources>

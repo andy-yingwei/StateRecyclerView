@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#111111"
+    android:padding="12dp">
+
+    <Button android:id="@+id/btnLoading"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="1. 首次加载(骨架屏)"/>
+    <Button android:id="@+id/btnSuccess"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="6dp" android:text="2. 加载成功"/>
+    <Button android:id="@+id/btnEmpty"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="6dp" android:text="3. 空数据"/>
+    <Button android:id="@+id/btnError"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="6dp" android:text="4. 加载错误"/>
+    <Button android:id="@+id/btnRefresh"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="6dp" android:text="5. 非首次刷新"/>
+
+    <com.example.staterecyclerview.StateRecyclerView
+        android:id="@+id/stateRv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>

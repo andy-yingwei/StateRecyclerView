@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="srv_skeleton_base">#E6E8EB</color>
+    <color name="srv_skeleton_shimmer">#1AFFFFFF</color>
+    <color name="srv_empty_icon_tint">#757575</color>  <!-- 等同 colorOnSurfaceVariant 深灰 -->
+    <color name="srv_error_icon_tint">#B3261E</color>  <!-- 等同 Material3 error -->
+    <color name="srv_surface">#FFFFFF</color>  <!-- 白天；夜间可走夜间资源 -->
+</resources>
